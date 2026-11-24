@@ -1,0 +1,36 @@
+{
+  "project": "Mini-Courier Planner",
+  "depot": "DEPOT",
+  "capacity_kg": 12,
+  "parcels": [
+    {"id": "P101", "destination": "A", "weight_kg": 4, "deadline_days": 10, "priority": 3, "value": 80},
+    {"id": "P102", "destination": "B", "weight_kg": 3, "deadline_days": 8, "priority": 5, "value": 100},
+    {"id": "P103", "destination": "C", "weight_kg": 5, "deadline_days": 12, "priority": 2, "value": 70},
+    {"id": "P104", "destination": "D", "weight_kg": 2, "deadline_days": 6, "priority": 5, "value": 60},
+    {"id": "P105", "destination": "E", "weight_kg": 6, "deadline_days": 15, "priority": 1, "value": 90},
+    {"id": "P106", "destination": "F", "weight_kg": 3, "deadline_days": 9, "priority": 4, "value": 85}
+  ],
+  "edges": [
+    ["DEPOT", "A", 4],
+    ["DEPOT", "B", 6],
+    ["DEPOT", "C", 7],
+    ["DEPOT", "D", 3],
+    ["DEPOT", "E", 9],
+    ["DEPOT", "F", 5],
+    ["A", "B", 4],
+    ["A", "C", 6],
+    ["A", "D", 5],
+    ["A", "E", 8],
+    ["A", "F", 3],
+    ["B", "C", 3],
+    ["B", "D", 5],
+    ["B", "E", 4],
+    ["B", "F", 4],
+    ["C", "D", 4],
+    ["C", "E", 3],
+    ["C", "F", 6],
+    ["D", "E", 7],
+    ["D", "F", 5],
+    ["E", "F", 5]
+  ]
+}

@@ -1,0 +1,41 @@
+==============================================================
+                 MINI-COURIER PLANNER
+==============================================================
+Vehicle carrying capacity: 12 kg
+
+1. PARCELS SORTED (deadline first, then priority)
+   P104 | Destination D | Deadline: 6 days | Priority: 5
+   P102 | Destination B | Deadline: 8 days | Priority: 5
+   P106 | Destination F | Deadline: 9 days | Priority: 4
+   P101 | Destination A | Deadline: 10 days | Priority: 3
+   P103 | Destination C | Deadline: 12 days | Priority: 2
+   P105 | Destination E | Deadline: 15 days | Priority: 1
+
+2. OPTIMAL PARCELS SELECTED (0/1 Knapsack DP)
+   P104 -> D | Weight: 2 kg | Value: 60
+   P102 -> B | Weight: 3 kg | Value: 100
+   P106 -> F | Weight: 3 kg | Value: 85
+   P101 -> A | Weight: 4 kg | Value: 80
+   Total weight: 12/12 kg
+   Total value: 325
+
+3. SHORTEST DISTANCES FROM DEPOT (Dijkstra)
+   DEPOT to A: 4 km
+   DEPOT to B: 6 km
+   DEPOT to C: 7 km
+   DEPOT to D: 3 km
+   DEPOT to E: 9 km
+   DEPOT to F: 5 km
+
+4. APPROXIMATE DELIVERY ROUTE (Nearest Neighbor TSP)
+   DEPOT -> D -> B -> F -> A -> DEPOT
+   Total route distance: 19 km
+
+5. RUNTIME OF MAIN STEPS
+   Merge sort:             0.0109 ms
+   Knapsack DP:            0.0173 ms
+   One Dijkstra run:       0.0178 ms
+   Nearest-neighbor route: 0.0786 ms
+
+Note: Runtime changes depending on the computer and input size.
+==============================================================

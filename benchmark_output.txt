@@ -1,0 +1,15 @@
+Running performance tests. Please wait for the results...
+
+ 10 parcels | complete planner: 0.2217 ms
+ 20 parcels | complete planner: 0.6266 ms
+ 40 parcels | complete planner: 3.8595 ms
+ 80 parcels | complete planner: 20.3742 ms
+
+Runtime chart saved to: runtime_chart.png
+Benchmark table saved to: benchmark_results.csv
+
+Benchmark summary (milliseconds):
+ 10 parcels: sort=0.0090, knapsack=0.0215, Dijkstra=0.0112, route=0.1788, total=0.2217
+ 20 parcels: sort=0.0169, knapsack=0.1229, Dijkstra=0.0336, route=0.5276, total=0.6266
+ 40 parcels: sort=0.0427, knapsack=0.2399, Dijkstra=0.1001, route=3.1631, total=3.8595
+ 80 parcels: sort=0.0988, knapsack=1.2104, Dijkstra=0.3692, route=18.6924, total=20.3742
